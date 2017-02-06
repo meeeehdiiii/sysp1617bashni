@@ -1,0 +1,56 @@
+﻿Gruppe 10 – Organisation und Fragen
+
+
+mona.dietrich@campus.lmu.de;
+R.Yimbog@campus.lmu.de;
+mehdi_y@web.de
+l.vaitl@campus.lmu.de;
+nietschke@cip.ifi.lmu.de
+
+
+Meilensteine:
+
+Planung------------------Fertigstellung-----------------------------
+MS 1 – 27.11.    |       3.12.2016
+MS 2 – 09.12.    |       mitte Dezember ca.
+MS 3 – 19.12.    |       Stand 26.1.2017 immer noch nicht fertig.
+MS 4 – 30.12.    |       seit gestern wird an der Ki gearbeitet (heute ist 3.2.2017)
+--------------------------------------------------------------------
+Abgabefrist des Projekts ist am 5.2.2017 um 23:59 Uhr
+--------------------------------------------------------------------
+
+
+
+TODOS:
+- think-methode:
+        - gueltigen Move bekommen -> einfacher zug geht. schlagenderZug nur teilweise
+        - manchmal macht er einen einfachenZug in die falsche richtung!
+- alle negativen Faelle in negMsgHandling() abfangen - (die meisten hab ich schon).
+- Ueberlegung: je nachdem welcher Spieler wir sind, fangen wir von der anderen Seite des spielbretts an, das brett durchzugehen?!
+               weil je weiter das spiel fortgeschritten ist, desto mehr sind die steine nach vorne gelaufen-> ki ist schneller
+- mit getopt config datei option abfangen
+- reconnect zum server nach invalid move und nach Timeout
+- gethostbyname ersetzen mit getaddrinfo
+- valgrind --leak-check=full --show-leak-kinds=all -v bashni *gameID*
+
+
+
+
+
+Fragen (neueste Fragen bitte ganz oben):
+_________________________________________
+2.Februar 2017:
+- bei timeout funktionert exit failure nicht. warum ? --> weil der andere prozess noch lebt höhö
+- ein paar fragen sind in den TODOS oben. --> joa
+
+_________________________________________
+26. Januar 2017:
+- was ist an unserer select methode falsch,dass sie nicht funktioniert? -> geht jetzt. neue version geht
+- sollen wir erst thinking schicken, oder erst den signal an den thinker? -> trivial
+        bzw. anders gefragt, wann genau sollen wir thinking schicken?
+- warum funktioniert die while schleife mit unseren piecesList nicht? bzw. warum ist die nachricht NULL ?? -> strtok zerstoert die nachrichten
+
+_________________________________________
+früher:
+pid_t: Warum wird zuerst der Vaterprozess ausgeführt? Antwort: -> systemabhaengig und nicht immer so!
+Wie kann man am Anfang die GameId unkompliziert auf Korrektheit testen? -> trivial
